@@ -1,5 +1,14 @@
 import Foundation
-import UIKit
+
+import Foundation
+
+#if os(iOS)
+    import UIKit
+#endif
+
+#if os(macOS)
+    import AppKit
+#endif
 
 public class ColorManager {
     
